@@ -24,6 +24,8 @@ return (p - 1 == s);
 int powH(int x)
 {
 int pow;
+if (x < 0)
+return (-1);
 if (x == 0)
 return (1);
 pow = 2 * powH(x - 1);
